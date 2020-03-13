@@ -72,9 +72,13 @@ private static JSONObject getTokenizationSpecification() {
 ```
 ## Version Information
 
+### Version 1.2.0
+
+Bug fix for GooglePay Preauth transaction
+
 ### Version 1.1.0
 
-Add INTERAC support for GooglePay0
+Add INTERAC support for GooglePay
 
 ### Version 1.0.0
 
