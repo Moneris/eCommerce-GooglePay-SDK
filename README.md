@@ -20,19 +20,25 @@ In order to integrate your Google Pay™ payment solution with Moneris®, there 
 In the Project Gradle file
 
 ```Gradle
-repositories {
+allprojects {
+    repositories {
         google()
-        jcenter()        
+        jcenter()
     }
+}
 ```
 Add the additional maven repository stated below
 
 ```Gradle
-repositories {
+allprojects {
+    repositories {
         google()
-        jcenter()        
-        maven { url "https://github.com/Moneris/eCommerce-GooglePay-SDK/raw/master" }
+        jcenter()
+        maven {
+            url "https://github.com/Moneris/eCommerce-GooglePay-SDK/raw/master"
+        }
     }
+}
 ```
 
 
@@ -49,7 +55,7 @@ Implement the googlepayapi as described below
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.google.android.gms:play-services-wallet:16.0.0'
-    implementation 'com.moneris.googlepay:googlepayapi:1.1.0'
+    implementation 'com.moneris.googlepay:googlepayapi:1.2.0'
 }
 ```
 ## Customizing your Google Pay™ Application for Moneris®
