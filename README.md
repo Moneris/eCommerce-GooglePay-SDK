@@ -78,16 +78,21 @@ private static JSONObject getTokenizationSpecification() {
 ```
 ## Version Information
 
+### Version 1.3.0
+
+- Removed logging of requestXML for security
+- Provided toXML() method in MonerisHttpsPost class to obtain request XML for debugging purpose
+
 ### Version 1.2.0
 
-Bug fix for GooglePay Preauth transaction
+- Bug fix for GooglePay Preauth transaction
 
 ### Version 1.1.0
 
-Add INTERAC support for GooglePay
+- Add INTERAC support for GooglePay
 
 ### Version 1.0.0
 
-Basic Google Pay™ Android™ Integration with Moneris® as the payment gateway.
+- Basic Google Pay™ Android™ Integration with Moneris® as the payment gateway.
 
 
