@@ -55,7 +55,7 @@ Implement the googlepayapi as described below
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.google.android.gms:play-services-wallet:16.0.0'
-    implementation 'com.moneris.googlepay:googlepayapi:1.2.0'
+    implementation 'com.moneris.googlepay:googlepayapi:1.4.0'
 }
 ```
 ## Customizing your Google Pay™ Application for Moneris®
@@ -77,6 +77,11 @@ private static JSONObject getTokenizationSpecification() {
 }
 ```
 ## Version Information
+
+### Version 1.4.0
+
+- Bug fix for cust id
+- Added dynamic descriptor support for GooglePay transactions
 
 ### Version 1.3.0
 
